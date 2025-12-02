@@ -8106,6 +8106,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 3333333220445032916, guid: 65d46f4fe80da3b488cbf7b6508c21ca, type: 2}
     value: {fileID: 1939696094}
+  - key: {fileID: -704927702000683398, guid: 65d46f4fe80da3b488cbf7b6508c21ca, type: 2}
+    value: {fileID: 1658022019}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &330548922
@@ -28531,7 +28533,7 @@ PrefabInstance:
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.48
+      value: -0.649
       objectReference: {fileID: 0}
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562,
         type: 3}
@@ -28541,17 +28543,17 @@ PrefabInstance:
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562,
         type: 3}
@@ -34471,6 +34473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1545604053}
+  - component: {fileID: 1545604054}
   m_Layer: 0
   m_Name: ZombieMover
   m_TagString: Untagged
@@ -34494,6 +34497,25 @@ Transform:
   - {fileID: 777572076}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1545604054
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545604052}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 642e615b09a067f4798004f026876b75, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 3125898481409734237, guid: 642e615b09a067f4798004f026876b75, type: 2}
+    value: {fileID: 1658022019}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1548921674
 GameObject:
   m_ObjectHideFlags: 0
@@ -36994,6 +37016,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4880295184285802, guid: 73dd7a893b9f3b547a73fc800af96e4f,
     type: 3}
   m_PrefabInstance: {fileID: 1657358229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1658022019 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7389507112651452681, guid: 6dc4cf4496348884d8ee27743ae38562,
+    type: 3}
+  m_PrefabInstance: {fileID: 1323226747}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1660828131
 GameObject:
