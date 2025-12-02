@@ -34507,7 +34507,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 642e615b09a067f4798004f026876b75, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -43728,6 +43728,7 @@ GameObject:
   - component: {fileID: 1947576012}
   - component: {fileID: 1947576011}
   - component: {fileID: 1947576015}
+  - component: {fileID: 1947576016}
   m_Layer: 0
   m_Name: Trigger01
   m_TagString: Untagged
@@ -43839,6 +43840,20 @@ MonoBehaviour:
   director: {fileID: 330548921}
   playerTag: Player
   playOnce: 1
+--- !u!114 &1947576016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947576010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e81f8b69a87d2048a0f7801ccbe4863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeline: {fileID: 1545604054}
+  playerTag: Player
 --- !u!1001 &1947741295
 PrefabInstance:
   m_ObjectHideFlags: 0
