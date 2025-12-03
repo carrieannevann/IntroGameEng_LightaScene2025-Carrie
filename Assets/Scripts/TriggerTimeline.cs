@@ -1,31 +1,19 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Playables;
 
 public class TriggerTimeline : MonoBehaviour
 {
-    [Header("Timeline to Play")]
-    public PlayableDirector timeline;   // Drag your ZombieMover here in Inspector
-
-    [Header("Trigger Settings")]
-    public string playerTag = "Player"; // Make sure your player is tagged "Player"
-
-    private bool hasPlayed = false;     // Optional: only play once
+    public PlayableDirector timeline;
+    public string playerTag = "Player";
+    
+    private bool hasPlayed = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (hasPlayed) return;
+        if (hasPlayed) return;               // ⛔ Already triggered once
+        if (!other.CompareTag(playerTag)) return;
 
-        if (other.CompareTag(playerTag))
-        {
-            if (timeline != null)
-            {
-                timeline.Play();
-                hasPlayed = true;
-            }
-            else
-            {
-                Debug.LogWarning("TriggerTimeline: No timeline assigned on " + name);
-            }
-        }
+        hasPlayed = true;                    // 🔒 Lock so it never triggers again
+        timeline.Play();                     // ▶️ Play Timeline
     }
 }
